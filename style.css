@@ -1,0 +1,22 @@
+body {
+  background-color:#252424;
+}
+
+.paragraph{
+  margin-left: 20px;
+}
+
+li {
+  color:#ffffff;
+}
+
+
+#canvas{
+  width: 600px;
+  height: 400px;
+  border: 10px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}

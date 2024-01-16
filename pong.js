@@ -1,4 +1,3 @@
-//    https://www.protectedtext.com/badpong    1234
 let c = document.getElementById('canvas');
 let ctx = canvas.getContext('2d');
 let balldiameter = 5;
@@ -111,7 +110,7 @@ let ball = {
   ctx.fillStyle="#ffffff";
   ctx.fillRect(this.x,this.y ,balldiameter,balldiameter)
 
-},//22
+},
   move:function(){
     this.x += this.speedx;
     this.y += this.speedy;
@@ -120,7 +119,7 @@ let ball = {
       if(this.x >= c.width-balldiameter) {
          // this.speedx = 0;
          // this.speedy = 0;
-         leftScore = leftScore + 1;
+         leftScore += 1;
 
          this.x = c.width/2-balldiameter/2;
          this.y = c.height/2-balldiameter/2;
@@ -157,7 +156,6 @@ let ball = {
    if(this.y <= 0) {
        this.speedy = 1;
 }
-//dog
 
 // verificam daca mingea se loveste de paleta jucatorului 1
 if (this.x <= balldiameter*2 && this.x >= balldiameter) {
@@ -181,13 +179,12 @@ if (this.x >= c.width - balldiameter*3 && this.x <= c.width - balldiameter*2) {
 // if (this.x >= c.width) {
 //     console.log("Point for P1");
 // }
-//dog
 }
 }
 
 
 // initializam paleta stanga (Jucator 1)
-let leftPaddle = {//cu codul de la small
+let leftPaddle = {
   x: balldiameter,
   y: c.height/2 - paddleHeight/2,
   speedx:0,//0 like the number of Windows phones sold this year
